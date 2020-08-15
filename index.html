@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My People</title>
+</head>
+
+<body>
+    <h1 id="header" > My People <i class="fas fa-user-friends"></i></h1>
+    <div class="people-list"></div>
+    <script id="people-template" type="text/x-handlebars-template">
+        {{#each this}}
+    <div class="people-id" id="{{id.name}}">
+<img id="pic" src="{{picture.large}}">    
+<div class="name">{{name.first}} {{name.last}} </div>
+    <div class="email">{{email}} </div>
+</div>
+    {{/each}}
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

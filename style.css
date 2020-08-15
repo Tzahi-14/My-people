@@ -1,0 +1,33 @@
+.people-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+.people-id {
+    box-shadow: 1px 1px 3px #0a1612;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: rgba(0, 128, 122, 0.938);
+    font-size: 200%;
+}
+
+.people-id:hover {
+    color: rgb(238, 231, 130);
+}
+
+.email {
+    color: rgb(0, 255, 13);
+    text-decoration: underline;
+}
+
+#error {
+    height: 75%;
+    width: 75%;
+}
+
+#header {
+    background-color: greenyellow;
+    display: inline-block;
+}
